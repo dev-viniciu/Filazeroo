@@ -1,0 +1,8 @@
+.header-container { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 78px; padding: 10px clamp(16px, 5vw, 64px); background: #fff; border-bottom: 3px solid #e31c3d; box-shadow: 0 4px 16px rgba(12, 40, 67, .08); }
+.logo-link { display: flex; align-items: center; flex-shrink: 0; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.minhaLogo { display: block; width: auto; max-width: 168px; max-height: 56px; object-fit: contain; }
+.nav { display: flex; align-items: center; gap: 8px; }
+.nav-button { position: relative; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 8px; min-width: 104px; min-height: 44px; padding: 10px 14px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #173b5e; font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; transition: background .18s, border-color .18s, color .18s; }
+.nav-button:hover, .nav-button:focus-visible { background: #edf4fa; border-color: #d5e3ef; color: #003b71; outline: none; }
+.nav-button .icon { color: #e31c3d; }
+@media (max-width: 560px) { .header-container { gap: 8px; min-height: 68px; padding: 8px 10px; } .minhaLogo { max-width: 100px; max-height: 42px; } .nav { gap: 1px; } .nav-button { flex-direction: column; gap: 2px; min-width: 51px; min-height: 48px; padding: 5px 4px; font-size: .62rem; } .nav-button .icon { width: 20px; height: 20px; } }

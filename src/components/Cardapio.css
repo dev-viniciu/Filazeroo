@@ -1,0 +1,22 @@
+.cardapio { width: 100%; max-width: 980px; margin: 28px auto; padding: clamp(18px, 4vw, 32px); box-sizing: border-box; color: #26384a; background: #fff; border: 1px solid #d8e1e9; border-top: 4px solid #e31c3d; border-radius: 14px; box-shadow: 0 8px 24px rgba(17, 48, 76, .06); font-family: inherit; }
+.cardapio h2 { margin: 0 0 8px; color: #003b71; text-align: left; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.03em; }
+.cardapio-subtitulo { margin: 0 0 22px; color: #667789; }
+.cardapio-principal { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); overflow: hidden; margin-bottom: 30px; border: 1px solid #d8e1e9; border-radius: 14px; background: #f5f8fb; }
+.cardapio-principal > img { display: block; width: 100%; height: 360px; object-fit: cover; background: #fff; }
+.cardapio-principal-texto { display: flex; flex-direction: column; justify-content: center; padding: clamp(18px, 3vw, 30px); }
+.cardapio-etiqueta { align-self: flex-start; padding: 6px 10px; border-radius: 5px; background: #e31c3d; color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+.cardapio-principal-texto h3 { margin: 14px 0 8px; color: #003b71; font-size: clamp(1.4rem, 3vw, 2rem); }
+.cardapio-principal-texto p { margin: 0; color: #667789; line-height: 1.6; }
+.cardapio-titulo-secao { margin: 26px 0 14px; padding-bottom: 9px; border-bottom: 1px solid #d8e1e9; color: #173b5e; }
+.cardapio-lista { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.cardapio-item { overflow: hidden; border: 1px solid #dce5ed; border-radius: 10px; background: #fff; }
+.cardapio-item img { display: block; width: 100%; height: 140px; object-fit: cover; background: #f5f8fb; }
+.cardapio-item div { padding: 12px; }
+.cardapio-item h4 { margin: 0 0 6px; color: #173b5e; }
+.cardapio-item p { margin: 0; color: #667789; font-size: 13px; line-height: 1.4; }
+.cardapio-bebidas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.cardapio-bebida { overflow: hidden; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px; border: 1px solid #dce5ed; border-radius: 9px; background: #f8fafc; color: #23425d; font-size: 13px; font-weight: 600; }
+.cardapio-bebida img { width: 54px; height: 76px; flex-shrink: 0; object-fit: contain; border-radius: 5px; background: #fff; }
+.cardapio-observacao { margin: 22px 0 0; color: #667789; font-size: 13px; }
+@media (max-width: 700px) { .cardapio-principal { grid-template-columns: 1fr; } .cardapio-principal > img { height: 300px; } .cardapio-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cardapio-bebidas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .cardapio { padding: 14px; } .cardapio-principal > img { height: 250px; } .cardapio-lista { gap: 8px; } .cardapio-item img { height: 115px; } .cardapio-bebida img { width: 42px; height: 64px; } }

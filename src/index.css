@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root { font-family: Inter, Arial, sans-serif; color: #26384a; background: #eef2f6; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #eef2f6; }
+button, input, select { font: inherit; }
+button { transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+button:not(:disabled):active { transform: translateY(1px); }
+#root { min-height: 100vh; width: 100%; margin: 0 auto; }

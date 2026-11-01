@@ -1,0 +1,54 @@
+:root { --azul: #075b9a; --azul-escuro: #003b71; --vermelho: #e31c3d; --texto: #26384a; --suave: #667789; --linha: #d8e1e9; }
+.site-main { width: 100%; min-height: calc(100vh - 80px); padding: 28px 18px 48px; background: linear-gradient(180deg, #f4f7fa 0, #eef2f6 240px); }
+.main-container, .carteirinha, .funcionario, .cardapio-container { width: min(100%, 720px); margin: 20px auto; padding: clamp(24px, 4vw, 40px); background: #fff; border: 1px solid var(--linha); border-radius: 12px; box-shadow: 0 8px 24px rgba(17, 48, 76, .07); color: var(--texto); }
+.main-container h1, .main-container h2, .carteirinha h2, .funcionario h2 { margin: 6px 0 10px; color: var(--azul-escuro); letter-spacing: -.035em; }
+.main-container h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); }
+.main-container h3, .carteirinha h3, .funcionario h3 { margin: 22px 0 12px; color: #244662; font-size: 1.08rem; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 10px; color: var(--vermelho); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.eyebrow::before { content: ''; display: inline-block; width: 22px; height: 3px; border-radius: 4px; background: var(--vermelho); }
+.texto-intro { max-width: 490px; margin: 0 0 24px; color: var(--suave); line-height: 1.65; }
+.main-container form, .funcionario form { display: flex; flex-direction: column; gap: 10px; }
+.main-container label, .funcionario label { margin: 8px 0 0; color: #30495f; font-size: .9rem; font-weight: 700; }
+.main-container input, .main-container select, .funcionario input, .funcionario select { width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid #c8d4df; border-radius: 7px; background: #fff; color: #26384a; outline: none; transition: border-color .18s, box-shadow .18s; }
+.main-container input:focus, .main-container select:focus, .funcionario input:focus, .funcionario select:focus { border-color: var(--azul); box-shadow: 0 0 0 3px rgba(7, 91, 154, .12); }
+.main-container p, .carteirinha p, .funcionario p { color: var(--suave); font-size: .94rem; line-height: 1.6; }
+.main-container button, .carteirinha button, .funcionario button { display: inline-flex; align-items: center; justify-content: center; min-height: 45px; margin: 4px 0 0; padding: 11px 18px; border: 1px solid var(--azul); border-radius: 7px; background: var(--azul); color: #fff; font-size: .92rem; font-weight: 700; cursor: pointer; transition: background .18s, transform .18s, box-shadow .18s; }
+.main-container button:hover:not(:disabled), .carteirinha button:hover:not(:disabled), .funcionario button:hover:not(:disabled) { background: var(--azul-escuro); box-shadow: 0 4px 12px rgba(7, 91, 154, .18); }
+.main-container button:disabled, .funcionario button:disabled { border-color: #d5dce3; background: #e6eaee; color: #778392; cursor: not-allowed; }
+.btn-login { width: 100%; margin-top: 12px !important; }
+.dica-login { margin: 4px 0 0; font-size: .83rem !important; }
+.erro-login { margin: 4px 0; color: #a3332b !important; }
+.login-aluno { max-width: 610px; border-top: 4px solid var(--azul); }
+.carteirinha { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 590px; padding: clamp(24px, 5vw, 42px); border-top: 4px solid var(--azul); }
+.carteirinha h2 { font-size: 1.7rem; }
+.carteirinha h3 { margin: 0 0 22px; font-weight: 600; }
+.carteirinha p { margin: 7px 0; overflow-wrap: anywhere; }
+.carteirinha-identidade { display: flex; align-items: center; justify-content: flex-start; gap: 14px; width: 100%; margin: 8px 0 18px; padding: 16px; border: 1px solid #dce5ed; border-radius: 9px; background: #f5f8fb; text-align: left; }
+.avatar-aluno { display: grid; place-items: center; flex: 0 0 48px; width: 48px; height: 48px; border-radius: 50%; background: #dceaf5; color: #003b71; font-weight: 800; }
+.carteirinha .nome-aluno { margin: 0; color: #173b5e; font-size: 1rem; font-weight: 800; }
+.carteirinha .numero-aluno { margin: 3px 0 0; font-size: .82rem; }
+.qr-area { display: flex; flex-direction: column; align-items: center; width: 100%; margin: 4px 0 12px; padding: 18px; border: 1px solid #dce5ed; border-radius: 10px; background: #fff; }
+.carteirinha svg { max-width: 100%; height: auto; margin: 4px 0 10px; }
+.qr-area p { margin: 0; font-size: .85rem; }
+.status-carteirinha { width: 100%; max-width: 420px; box-sizing: border-box; margin: 10px 0 !important; padding: 14px 16px; border-radius: 8px; font-size: .96rem !important; font-weight: 750; }
+.status-aguardando { border: 1px solid #ead6a0; background: #fff9e9; color: #76591a !important; }
+.status-liberado { border: 1px solid #b9dfc5; background: #effaf2; color: #176b35 !important; }
+.status-esgotado { border: 1px solid #e7c5c1; background: #fff2f0; color: #9b352b !important; }
+.acoes-carteirinha { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; margin-top: 14px; }
+.acoes-carteirinha button { min-width: 150px; margin: 0; }
+.carteirinha .btn-atualizar-carteirinha, .btn-secundario { border-color: #cbd8e3; background: #f1f5f8; color: #23425d; }
+.carteirinha .btn-atualizar-carteirinha:hover, .btn-secundario:hover { background: #e3edf4 !important; }
+.nota-intervalo { margin-top: 14px !important; font-size: .82rem !important; }
+#leitor-qr { width: 100%; max-width: 340px; margin: 16px auto; overflow: hidden; border-radius: 10px; }
+.painel-estoque, .resumo-lanches { width: 100%; margin: 22px 0; padding: 18px; border: 1px solid #dce5ed; border-radius: 10px; background: #f5f8fb; }
+.painel-estoque h3 { margin-top: 0; }
+.rodada-status { padding: 11px 13px; border: 1px solid #ead7a5; border-radius: 8px; background: #fff9e9; color: #76591a !important; }
+.rodada-status.liberada { border-color: #b9dfc5; background: #effaf2; color: #176b35 !important; }
+.aluno-encontrado, .aluno-retirada { margin: 14px 0; padding: 16px; border: 1px solid #dce5ed; border-radius: 9px; background: #fff; }
+.aluno-encontrado p, .aluno-retirada p { margin: 5px 0; }
+.lista-alunos-funcionario { width: 100%; margin: 24px 0; }
+.lista-alunos-funcionario > h3 { padding-bottom: 10px; border-bottom: 1px solid #dce5ed; }
+.funcionario ul { padding-left: 20px; color: #596779; line-height: 1.8; }
+.funcionario > button { margin-right: 10px; }
+@media (max-width: 520px) { .site-main { padding: 14px 10px 28px; } .main-container, .carteirinha, .funcionario, .cardapio-container { width: 100%; margin: 10px auto; padding: 21px; border-radius: 10px; } .carteirinha h2 { font-size: 1.4rem; } .acoes-carteirinha { flex-direction: column; } .acoes-carteirinha button { width: 100%; } }
+#area-aluno, #cardapio, #area-cantina { scroll-margin-top: 100px; }
